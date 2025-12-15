@@ -61,3 +61,4 @@ Se sigue una metodología **Scrum** dividida en 3 hitos:
 ## 👤 Autor
 * **Nombre:** Jaime Verdugo Serrano
 * **Correo:** [jaimeverdugo.dev@gmail.com](mailto:jaimeverdugo.dev@gmail.com)
+* **Centro:** IES Rafael Alberti
