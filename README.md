@@ -1,59 +1,63 @@
-# # AppTFG (Nombre Provisional) 🎮
-> Una plataforma social para amantes de los videojuegos, inspirada en Letterboxd, para puntuar, reseñar y descubrir nuevos títulos mediante IA.
+# PIDAM - GameTrack 🎮
+> Una plataforma social tipo Letterboxd para el sector del videojuego, con motor de recomendación por IA.
 
 ## 📝 Descripción del Proyecto
 Este proyecto es un **TFG (Trabajo de Fin de Grado)** que consiste en una aplicación híbrida (iOS/Android/Web) desarrollada con **Ionic y Angular**. La plataforma permite a los usuarios gestionar su historial de juegos, interactuar con una comunidad y recibir recomendaciones personalizadas basadas en inteligencia artificial.
 
-## 🚀 Tecnologías Utilizadas
-* **Frontend:** Ionic Framework + Angular (Plantilla Tabs).
-* **Backend & DB:** Firebase (Firestore, Auth, Storage).
-* **Lenguajes:** TypeScript, SCSS, HTML.
-* **APIs Externas:** RAWG API / IGDB para la base de datos de videojuegos.
-* **IA:** Integración con modelos de HuggingFace para el sistema de recomendaciones.
+---
+
+## 📑 Planificación y Análisis
+
+### A. Recopilación de Información 📚
+Se ha investigado el estado del arte de las aplicaciones de gestión de ludotecas. Se han seleccionado las siguientes fuentes de datos y herramientas:
+* **APIs:** Evaluación de RAWG API y IGDB para el catálogo de juegos.
+* **Referentes:** Análisis de UX/UI basado en Letterboxd y plataformas de streaming.
+* **Tecnología:** Estudio de la documentación oficial de Ionic y Firebase para garantizar la sincronización en tiempo real.
+
+### B. Estudio de Viabilidad Técnica ⚙️
+El proyecto se considera viable utilizando el stack **Ionic + Angular + Firebase**:
+* **Multiplataforma:** Un solo desarrollo para iOS, Android y Web.
+* **Escalabilidad:** Firebase permite gestionar la autenticación y base de datos sin necesidad de infraestructura de servidor propia.
+* **Integración:** Capacidad de conectar modelos de IA externos mediante Firebase Functions.
+
+### C. Fases y Plazos de Ejecución 📅
+Se sigue una metodología **Scrum** dividida en 3 hitos:
+1. **Fase 1 (Semanas 1-2):** Setup, Auth y vinculación con Firestore (Infraestructura).
+2. **Fase 2 (Semanas 3-5):** Core de la app: Búsqueda, Detalle del juego y Sistema de valoraciones.
+3. **Fase 3 (Semanas 6-7):** Feed Social y módulo de Recomendación con IA (HuggingFace).
+
+### D. Objetivos y Alcance 🎯
+* **Objetivo:** Crear una comunidad donde el usuario pueda registrar su actividad gamer.
+* **Alcance:** Sistema de login (Google/Email), buscador de juegos, sistema de estrellas, reseñas sociales y perfil personalizado con recomendaciones inteligentes.
+
+### E. Actividades de Desarrollo 🛠️
+* Configuración de entornos y repositorio Git.
+* Modelado de datos en Firestore (Usuarios, Ratings, Reseñas).
+* Desarrollo de componentes UI reutilizables (Cards, Sliders, Forms).
+* Integración de lógica de IA para personalización de contenido.
+
+### F. Recursos Necesarios 📦
+* **Materiales:** PC de desarrollo, dispositivos de pruebas (Android/iOS), VS Code, Firebase Console.
+* **Personales:** Jaime Verdugo Serrano (Full-stack Developer).
+
+### G. Financiación y Presupuesto 💰
+* **Costes de Infraestructura:** 0€ (Uso de niveles gratuitos: Firebase Spark Plan, HuggingFace Free Tier).
+* **Coste de Desarrollo:** Autofinanciado (Estimación de 300 horas de desarrollo).
 
 ---
 
-## 📅 Planificación del Proyecto (Metodología Scrum)
-
-La ejecución del proyecto se divide en los siguientes bloques funcionales extraídos del backlog técnico:
-
-### 1. Configuración e Infraestructura 🛠️
-- [ ] Setup del entorno (Node.js, Angular/Ionic CLI).
-- [ ] Inicialización del repositorio Git y variables de entorno `.env`.
-- [ ] Configuración de Firebase (Firestore, Auth, Storage).
-- [ ] Conexión inicial y reglas de seguridad.
-
-### 2. Gestión de Usuarios y Seguridad 👤
-- [ ] Servicio de Autenticación (Email, Password y Google Login).
-- [ ] Implementación de Guards de sesión.
-- [ ] Creación de perfiles de usuario vinculados a Firestore.
-- [ ] Funcionalidades de recuperación de contraseña y logout.
-
-### 3. Núcleo de la Aplicación (Core) 🏠
-- [ ] **Home:** Secciones de "Para Ti", "Reseñas" y "Siguiendo".
-- [ ] **Búsqueda:** Integración de API externa con filtros por género y plataforma.
-- [ ] **Detalle del Juego:** Información técnica, portadas y sistema de navegación.
-
-### 4. Sistema Social y Valoraciones ⭐
-- [ ] **Rating:** Componente de estrellas interactivo y cálculo de promedios.
-- [ ] **Reseñas:** Sistema de feedback escrito vinculado a juegos y usuarios.
-- [ ] **Social:** Funcionalidad de "Seguir usuario" y feed de actividad reciente.
-
-### 5. Inteligencia Artificial (IA) 🤖
-- [ ] Creación de dataset de usuario (juegos/géneros preferidos).
-- [ ] Implementación de Firebase Functions para procesamiento.
-- [ ] Integración con modelos de **HuggingFace** para recomendaciones personalizadas.
-
----
+## 🚀 Stack Tecnológico
+* **Frontend:** Ionic Framework & Angular.
+* **Backend:** Firebase (Firestore, Auth, Storage).
+* **IA:** HuggingFace API.
 
 ## 🛠️ Instalación y Ejecución
-1. Clona el repositorio: `git clone [URL_DEL_REPO]`
-2. Instala las dependencias: `npm install`
-3. Levanta el servidor local: `ionic serve`
+1. Clona el repositorio.
+2. Ejecuta `npm install` para las dependencias.
+3. Inicia el entorno con `ionic serve`.
 
 ---
 
-## 🎓 Autor
+## 👤 Autor
 * **Nombre:** Jaime Verdugo Serrano
-* **Contacto:** jaimeverdugo.dev@gmail.com
-* **Centro:** IES Rafael ALberti
+* **Correo:** [jaimeverdugo.dev@gmail.com](mailto:jaimeverdugo.dev@gmail.com)
