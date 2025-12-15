@@ -1,4 +1,4 @@
-# PIDAM - GameTrack 🎮
+# AppTFG (nombre proyecto) 🎮
 > Una plataforma social tipo Letterboxd para el sector del videojuego, con motor de recomendación por IA.
 
 ## 📝 Descripción del Proyecto
